@@ -1,7 +1,64 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap");
 
+@keyframes anim-glow {
+	0% {
+		box-shadow: 0 0 rgba(#084b8a, 1);
+	}
+	100% {
+		box-shadow: 0 0 10px 8px transparent;
+		border-width: 10px;
+    }
+}
+
 header{
     background-color: black;
     background-image: url("img/ZZZZZ2581.jpg");
+    object-fit: fill;
+}
+
+.overlay {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+    overflow: hidden;
+   
+    height: 0;
+    
+  }
+
+  .titles:hover .overlay {
+    transition: .5s ease;
+    
+    height: 100%;
+    padding: 3px;
+    margin-left: 3px;
+    
+  }
+
+
+.icon	{
+	border-radius: 50%;
+	border: 2px solid #61a3ef;
+	width: 10px;
+	height: 10px;
+	text-align: center;
+	position: relative;
+	animation: anim-glow 2s ease infinite;
+		
+	
+}
+
+#hamburger{
+    height: 20px;
+}
+
+.nav{
+    background-color: rgb(1, 42, 58);
+}
+
+html{
+    background-color: rgb(10, 29, 37);
 }
