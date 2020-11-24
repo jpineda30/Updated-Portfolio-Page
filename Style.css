@@ -61,4 +61,30 @@ header{
 
 html{
     background-color: rgb(10, 29, 37);
+    overflow: hidden;
+   
 }
+
+.mainImg{
+    width: 300px;
+}
+
+body{
+    height: 100vh;
+}
+
+#body{
+    height: 60vh;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.card{
+    background-color: rgb(1, 42, 58);
+    color: white;
+}
+
+.fill
+{width: 100%;}
+
